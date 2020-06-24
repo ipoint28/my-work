@@ -1,0 +1,126 @@
+.about-fork {
+  @include aboutFork_background;
+  &-title {
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    color: white;
+  }
+  &-flex {
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  &__block {
+    display: inline-block;
+    text-align: center;
+    padding: 0 0 45px 0;
+  }
+  &__logo {
+    @include font_l;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  &__descript {
+    @include font_l;
+    @include flex-center;
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+
+  }
+  &-footer {
+    display: none;
+    color: #A291A5;
+    text-align: center;
+  }
+
+}
+
+
+
+@media (min-width: 320px) {
+  .about-fork {
+    &-title {
+      padding: 88px 0 88px 0;
+      font-size: 36px;
+      line-height: 48px;
+    }
+    &__descript {
+      font-size: 16px;
+      line-height: 24px;
+      width: 85%;
+      margin: 0 auto;
+    }
+  }
+
+}
+@media (min-width: 481px) {
+  .about-fork {
+    &-title {
+      padding: 88px 0 88px 0;
+      font-size: 42px;
+      line-height: 44px;
+    }
+
+    &__block {;
+      width: 41%;
+      padding: 10px 18px 10px 18px;
+    }
+
+    &__descript {
+      width: 85%;
+      font-size: 14px;
+      line-height: 24px;
+    }
+    &-footer {
+      position: relative;
+      display: block;
+      padding: 66px 36px 22px 28px;
+      font-size: 14px;
+      line-height: 21px;
+    }
+    &-footer::after {
+      content:"";
+      background-color: $bgMainColor;
+      position: absolute;
+      width: 90%;
+      bottom: 14px;
+      height: 2px;
+      left: 25px;
+    }
+
+  }
+}
+@media (min-width: 993px) {
+  .about-fork {
+    &-title {
+      padding: 108px 0 82px 0;
+      font-size: 48px;
+      line-height: 50px;
+    }
+
+    &__block {
+      width: 29%;
+      margin: 5px 5px 5px 5px;
+    }
+
+    &__descript {
+      width: 90%;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &-footer {
+      display: block;
+      padding: 118px 245px 0 245px;
+      width: 60%;
+    }
+  }
+.about-fork-footer::after {
+    width: 63%;
+    bottom: -6px;
+    left: 205px;
+}
+
+}

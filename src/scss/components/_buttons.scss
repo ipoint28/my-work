@@ -1,0 +1,53 @@
+@mixin headerBtnPhone {
+  position: absolute ;
+  right: -143px;
+  top: 4px;
+  color: white;
+  padding: 11px 10px 11px 10px;
+  border-radius: 5em;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 17px;
+  background-color: $bgMainColor;
+  border: 2px solid $bgMainColor;
+  box-sizing: border-box;
+}
+@mixin headerBtn {
+  right: -164px;
+  top: 4px;
+  color: white;
+  padding: 11.5px 20px 11.5px 20px;
+  border-radius: 5em;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 17px;
+  background-color: $bgMainColor;
+  border: 2px solid $bgMainColor;
+  box-sizing: border-box;
+}
+
+@mixin contentButtonPhone {
+  bottom: auto;
+  margin-bottom: -21px;
+}
+@mixin contentBtn {
+  position: static;
+  padding: 11px 34px 11px 34px;
+  border-radius: 5em;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 22px;
+  background-color: #8D81AC;;
+}
+@mixin content_btn_hover {
+  background-color:white;
+  border:2px solid $bgMainColor;
+  color: $bgMainColor;
+  box-sizing: border-box;
+}
+@mixin header_btn_hover {
+  background-color: white;
+  border:2px solid $bgMainColor;
+  color: $bgMainColor;
+  box-sizing: border-box;
+}

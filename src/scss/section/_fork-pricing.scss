@@ -1,0 +1,131 @@
+.fork-pricing {
+  @media (min-width: 320px) {
+    background-color: #4B3B4E;
+    background-image: none;
+    padding: 40px 0;
+  }
+  @media (min-width: 480px) {
+    background-image: url('../img/backgrounds/bg_price.jpg');
+    padding: 50px 0;
+  }
+  @extend %bg-center;
+  background-size: cover;
+  color: #fff;
+  & .section-title {
+    text-transform: capitalize;
+    line-height: 1.5em;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    @media (min-width: 320px) {
+      font-size: 28px;
+      padding: 20px 0;
+    }
+    @media (min-width: 481px) {
+      font-size: 42px;
+      padding: 30px 0;
+    }
+    @media (min-width: 993px) {
+      font-size: 48px;
+      padding: 30px 0 40px;
+    }
+  }
+}
+.price-wrap {
+  display: flex;
+  @media (min-width: 320px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @media (min-width: 481px) {
+  }
+  @media (min-width: 993px) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+.price-item {
+  text-align: center;
+  background: #ffffff20;
+  @media (min-width: 320px) {
+    width: 100%;
+    margin: 10px 20px;
+  }
+  @media (min-width: 481px) {
+    width: 40%;
+    margin: 30px 20px;
+  }
+  @media (min-width: 993px) {
+    width: 22%;
+    margin: 30px 10px;
+  }
+  &.selected {
+    @media (min-width: 320px) {
+      margin: 10px -20px;
+    }
+    @media (min-width: 481px) {
+      margin: 0 10px;
+      min-width: 300px;
+    }
+    @media (min-width: 993px) {
+      margin: 0 10px;
+      min-width: 320px;
+    }
+    background: #00000020;
+    margin: 10px -20px;
+    .price-name {
+      background: #00000020;
+    }
+    .price-value {
+      font-size: 82px;
+    }
+    .price-btn {
+      width: 190px;
+    }
+  }
+}
+.price-name {
+  font-size: 24px;
+  text-transform: uppercase;
+  padding: 30px 0;
+  background: #ffffff10;
+}
+.price-value {
+  font-size: 60px;
+  font-weight: bold;
+  padding: 30px 0;
+  &:first-letter {
+    font-weight: normal;
+  }
+}
+.price-period {
+  display: block;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+  position: relative;
+  &::after {
+    content:"";
+    width: 60px;
+    height: 5px;
+    background-color: $mainColor;
+    position: absolute;
+    top:50px;
+    left:calc(50% - 30px);
+  }
+}
+.price-benefits {
+  padding: 40px 0;
+  min-height: 60px;
+  line-height: 1.6em;
+}
+.price-btn {
+  @extend %btn-base;
+  background-color: #ffffff25;
+  padding: 15px 0;
+  border-radius: 40px;
+  width: 160px;
+  margin-bottom: 40px;
+  color:#ffffff;
+
+}

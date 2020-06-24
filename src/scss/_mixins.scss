@@ -1,0 +1,108 @@
+@mixin font_m{
+  font-family: 'Montserrat', sans-serif;
+}
+@mixin font_l {
+  font-family: 'Lato', sans-serif;
+}
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+@mixin flex-static {
+  display: flex;
+  position: static;
+}
+@mixin flex-spBetween {
+  display: flex;
+  justify-content: space-between;
+}
+@mixin  flex {
+  display: flex;
+  flex-wrap: nowrap;
+}
+@mixin  flex-spaceBetween {
+  @include flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+//*********************************************
+//*******************HEADER MIXINS*************
+@mixin headerSlogan{
+  @include font_l;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #8D81AC;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 16px;
+  text-transform: uppercase;
+  padding-left: 17px;
+}
+@mixin headerLinkTablet {
+  @include font_m;
+  color: #8D81AC;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  padding-left: 0;
+}
+@mixin headerLinkLaptop {
+  @include font_m;
+  color: #8D81AC;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 15px;
+}
+@mixin headerCenter {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+@mixin headerBefore {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $bgColorDark;
+  z-index: 2;
+}
+
+@mixin contentBackGround {
+  background-color: #000;
+  background-image: url("../img/header_img/bgBig_img.jpg");
+  background-position: center bottom 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@mixin contentBackGroundmobile {
+  background-color: #000;
+  background-image: url("../img/header_img/bgSmall_img.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+//*********************************************
+//*******************HEADER MIXINS*************
+
+@mixin aboutFork_background {
+  background: url("../img/about_fork/aboutForkBg_img.jpg");
+  background-color: #4a3b4e;
+  background-repeat: no-repeat;
+  background-position: top;
+
+}
+@mixin gitBtn($icon-link, $icon-name, $icon-size) {
+  content: $icon-name;
+  background-image:$icon-link;
+  background-repeat: no-repeat;
+  background-position: 15% center;
+  background-size: $icon-size;
+}

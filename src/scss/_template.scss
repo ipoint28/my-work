@@ -1,0 +1,38 @@
+body {
+  @include font_m;
+}
+body.lock {
+  overflow: hidden;
+}
+
+.container {
+  @extend %cont-center;
+  max-width: 1200px;
+  @media (min-width: 320px) {
+    padding: 0 15px;
+  }
+  @media (min-width: 481px) {
+    padding: 0 25px;
+  }
+}
+%cont-center {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+%flex-wrap-center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+%bg-center {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+%btn-base {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  cursor:pointer;
+}
