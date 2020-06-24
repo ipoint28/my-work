@@ -1,6 +1,21 @@
+.container-f {
+  width: 100%;
+  box-sizing: border-box;
+  @media (min-width: 320px) {
+    padding: 0 15px;
+  }
+  @media (min-width: 481px) {
+    padding: 0 20px;
+  }
+  @media (min-width: 993px) {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+}
 .navbar {
   background-color: #27262A;
   position: relative;
+  width: 100%;
 }
 .logo {
   background-image: url('../img/header_img/header_logo_small.png');
@@ -35,7 +50,8 @@
     justify-content: center;
   }
   @media (min-width:993px) {
-    display: inline-block;
+    float: right;
+    padding-right: 200px;
   }
 }
 .menu-item {
@@ -51,7 +67,7 @@
   }
   @media (min-width:993px) {
     justify-content: space-between;
-    padding: 24px 48px;
+    padding: 48px 24px;
   }
 }
 .menu-link {

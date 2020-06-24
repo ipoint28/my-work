@@ -77,9 +77,24 @@ body.lock {
   text-align: center;
   cursor: pointer; }
 
+.container-f {
+  width: 100%;
+  box-sizing: border-box; }
+  @media (min-width: 320px) {
+    .container-f {
+      padding: 0 15px; } }
+  @media (min-width: 481px) {
+    .container-f {
+      padding: 0 20px; } }
+  @media (min-width: 993px) {
+    .container-f {
+      max-width: 1200px;
+      padding: 0 30px; } }
+
 .navbar {
   background-color: #27262A;
-  position: relative; }
+  position: relative;
+  width: 100%; }
 
 .logo {
   background-image: url("../img/header_img/header_logo_small.png");
@@ -116,7 +131,8 @@ body.lock {
 
 @media (min-width: 993px) {
   .menu {
-    display: inline-block; } }
+    float: right;
+    padding-right: 200px; } }
 
 .menu-item {
   display: flex; }
@@ -132,7 +148,7 @@ body.lock {
   @media (min-width: 993px) {
     .menu-item {
       justify-content: space-between;
-      padding: 24px 48px; } }
+      padding: 48px 24px; } }
 
 .menu-link {
   text-decoration: none;
