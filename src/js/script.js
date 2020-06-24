@@ -1,6 +1,5 @@
-$(document).ready(function () {
-    $('.header-burger').click(function (event) {
-        $('.header-burger,.header-menu').toggleClass('active');
-        $('body').toggleClass('lock')
-    })
+const menuBtn = document.getElementById('burger-menu');
+menuBtn.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.getElementById('menu').classList.toggle("show");
 })
